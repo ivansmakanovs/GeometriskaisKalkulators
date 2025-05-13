@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Ģeometriskais kalkulators un Mērvienību konvertors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ģeometriskais kalkulators</h1>
+    <label>Rādiuss (cm): <input type="number" id="radius"></label>
+    <button onclick="calculateCircle()">Aprēķināt laukumu</button>
+    <p id="circleResult"></p>
+
+    <h1>Mērvienību konvertors</h1>
+    <label>Centimetri: <input type="number" id="cm"></label>
+    <button onclick="convertToMeters()">Pārveidot uz metriem</button>
+    <p id="convertResult"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

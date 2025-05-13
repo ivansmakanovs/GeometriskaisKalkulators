@@ -1,0 +1,11 @@
+function calculateCircle() {
+    let r = document.getElementById("radius").value;
+    let area = Math.PI * r * r;
+    document.getElementById("circleResult").innerText = "Laukums ir " + area.toFixed(2) + " cm²";
+}
+
+function convertToMeters() {
+    let cm = document.getElementById("cm").value;
+    let m = cm / 100;
+    document.getElementById("convertResult").innerText = cm + " cm = " + m.toFixed(2) + " m";
+}
