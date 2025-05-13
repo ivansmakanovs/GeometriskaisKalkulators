@@ -2,19 +2,36 @@
 <html lang="lv">
 <head>
     <meta charset="UTF-8">
-    <title>Ģeometriskais kalkulators un Mērvienību konvertors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ģeometriskais Kalkulators un Mērvienību Konvertors</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Ģeometriskais kalkulators</h1>
-    <label>Rādiuss (cm): <input type="number" id="radius"></label>
-    <button onclick="calculateCircle()">Aprēķināt laukumu</button>
-    <p id="circleResult"></p>
+    <div class="container">
+        <h1>Ģeometriskais Kalkulators un Mērvienību Konvertors</h1>
+        
+        <div class="calculator">
+            <h2>Kalkulators</h2>
+            <label for="radius">Rādiuss (cm):</label>
+            <input type="number" id="radius" placeholder="Ievadi rādiusu" />
 
-    <h1>Mērvienību konvertors</h1>
-    <label>Centimetri: <input type="number" id="cm"></label>
-    <button onclick="convertToMeters()">Pārveidot uz metriem</button>
-    <p id="convertResult"></p>
+            <button onclick="calculateArea()">Aprēķināt Apskārtni</button>
+
+            <h3>Rezultāts:</h3>
+            <p id="result"></p>
+        </div>
+
+        <div class="unit-converter">
+            <h2>Mērvienību Konvertors</h2>
+            <label for="meters">Metri:</label>
+            <input type="number" id="meters" placeholder="Ievadi metrus" />
+
+            <button onclick="convertUnits()">Konvertēt uz Kilometriem</button>
+
+            <h3>Rezultāts:</h3>
+            <p id="converted-result"></p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
